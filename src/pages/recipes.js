@@ -1,15 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-
-const About = () => {
+const Recipes = () => {
   return (
     <Layout>
-     <h1>about page</h1> 
+      <h1>recipes page</h1>
     </Layout>
   )
 }
 
-
-
-export default About
+export default Recipes
