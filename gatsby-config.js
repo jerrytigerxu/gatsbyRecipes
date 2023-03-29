@@ -7,6 +7,12 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+
 module.exports = {
   siteMetadata:{
     title: 'Simply Recipes',
@@ -41,6 +47,13 @@ module.exports = {
       options: {
         name: `styles`,
         path: `${__dirname}/src/assets/css`,
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ghp0dsvk766r`,
+        accessToken: `ccROXlqulButx4zK_bLO560zfdK3TSkeG33n9xi-r6o`, 
       },
     },
   ],
