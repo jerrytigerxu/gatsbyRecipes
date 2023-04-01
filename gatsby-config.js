@@ -56,5 +56,22 @@ module.exports = {
         accessToken: `ccROXlqulButx4zK_bLO560zfdK3TSkeG33n9xi-r6o`, 
       },
     },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Montserrat",
+              variants: ["400"],
+            },
+            {
+              family: "Inconsolata",
+              variants: ["400", "500", "600", "700"],
+            },
+          ],
+        }
+      },
+    },
   ],
 }
